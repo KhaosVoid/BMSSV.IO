@@ -1,0 +1,79 @@
+name: Main CD
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '**/*.md'
+      - '**/*.yml'
+      - '**/*.ps1'
+  workflow_dispatch:
+    branches:
+      - main
+
+jobs:
+
+  build:
+    strategy:
+      matrix:
+        configuration: [Release]
+
+    runs-on: windows-latest
+
+    env:
+      Source_Directory: .\src
+      Solution_Name: BMSSV.IO.sln
+      Project_Directory: .\BMSSV.IO
+      Project_Path: src\BMSSV.IO\BMSSV.IO.csproj
+      DOTNET_CLI_TELEMETRY_OPTOUT: 1
+      DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
+      DOTNET_NOLOGO: true
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    # Install the .NET 5.0.x workload
+    - name: Install .NET 5.0.x
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+
+    # Restore
+    - name: Restore
+      working-directory: ${{ env.Source_Directory }}
+      run: dotnet restore --nologo --verbosity quiet
+
+    # Build
+    - name: Build
+      working-directory: ${{ env.Source_Directory }}
+      run: dotnet build --configuration $env:Configuration --no-restore --nologo --verbosity quiet
+      env:
+        Configuration: ${{ matrix.configuration }}
+
+    # Test
+    - name: Test
+      working-directory: ${{ env.Source_Directory }}
+      run: dotnet test --no-restore --nologo --verbosity quiet
+
+    # Package
+    - name: Pack
+      working-directory: ${{ env.Source_Directory }}
+      run: dotnet pack --configuration $env:Configuration --no-restore --nologo
+      env:
+        Configuration: ${{ matrix.configuration }}
+
+    # Apply NuGet Source
+    - name: Apply NuGet Source
+      working-directory: ${{ env.Source_Directory }}
+      run: dotnet nuget add source "https://nuget.pkg.github.com/BMSSV.IO/index.json" --name "github" --username "KhaosVoid" --password "${{ secrets.GITHUB_TOKEN }}"
+
+    # Publish GitHub Package
+    - name: Publish
+      working-directory: ${{ env.Source_Directory }}
+      run: dotnet nuget push "${{ env.Project_Directory }}\bin\${{ env.Configuration }}\*.nupkg" --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
+      env:
+        Configuration: ${{ matrix.configuration }}

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RepositoryUrl>https://github.com/KhaosVoid/BMSSV.IO</RepositoryUrl>
+    <PackageId>BMSSV.IO</PackageId>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <Authors>Zach "KhaosVoid" Tommey</Authors>
+    <Product>BMSSV.IO</Product>
+    <Description>An IO library for interacting with the Mercury Steam BMSSV save format.</Description>
+    <Copyright>Zach "KhaosVoid" Tommey - Copyright 2021</Copyright>
+    <Version>2021.10.23.0</Version>
+    <AssemblyVersion>2021.10.23.0</AssemblyVersion>
+    <FileVersion>2021.10.23.0</FileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="MetroidSamusReturns\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>
+      </PackagePath>
+    </None>
+  </ItemGroup>
+</Project>

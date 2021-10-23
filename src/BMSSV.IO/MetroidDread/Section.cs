@@ -26,5 +26,16 @@ namespace BMSSV.IO.MetroidDread
         }
 
         #endregion Ctor
+
+        #region Methods
+
+        public T TryGetProperty<T>(string name) where T : class, IProperty
+        {
+            Properties.TryGetValue(name, out IProperty property);
+
+            return property as T;
+        }
+
+        #endregion Methods
     }
 }

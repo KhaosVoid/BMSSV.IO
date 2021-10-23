@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.3" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.3" />
+    <PackageReference Include="coverlet.collector" Version="3.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="MetroidSamusReturns\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BMSSV.IO\BMSSV.IO.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<EmbeddedResource Include="MetroidDread\SampleFiles\BMSSV\common.bmssv" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\BMSSV\pkprfl.bmssv" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\BMSSV\samus.bmssv" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\BMSSV\userdata.bmssv" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\PropertyDictionaries\PropertyDictionary.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\ActorTileStatesDictionaryProperty.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\AreaBoxProperty.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\BooleanArrayProperty.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\BooleanProperty.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\EnabledOccluderCollidersDictionaryProperty.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\FloatProperty.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\GlobalMapIconsArrayProperty.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\Int32Property.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\LiquidVolumesDictionaryProperty.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\MapTutorialTypesArrayProperty.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\MissionLogEntriesArrayProperty.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\StringArrayProperty.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\StringIdProperty.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\StringProperty.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\UInt32Property.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Sections\Section.bin" />
+  </ItemGroup>
+
+</Project>

@@ -63,13 +63,13 @@ namespace BMSSV.IO.Test.MetroidDread.FileTests
             Assert.IsNotNull(bmssv);
             Assert.IsNotNull(bmssv.FilePath);
             Assert.IsNotNull(bmssv.Sections);
-            Assert.IsTrue(bmssv.Sections.Length > 0);
+            Assert.IsTrue(bmssv.Sections.Count > 0);
 
-            for (int s = 0; s < bmssv.Sections.Length; s++)
+            for (int s = 0; s < bmssv.Sections.Count; s++)
             {
-                Assert.IsNotNull(bmssv.Sections[s].Name);
-                Assert.IsNotNull(bmssv.Sections[s].Properties);
-                Assert.IsTrue(bmssv.Sections[s].Properties.Count > 0);
+                Assert.IsNotNull(bmssv.Sections.Values.ElementAt(s).Name);
+                Assert.IsNotNull(bmssv.Sections.Values.ElementAt(s).Properties);
+                Assert.IsTrue(bmssv.Sections.Values.ElementAt(s).Properties.Count > 0);
             }
         }
 

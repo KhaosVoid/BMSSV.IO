@@ -14,7 +14,7 @@ namespace BMSSV.IO.MetroidDread
 
         public string Name { get; }
         public DataTypes DataType { get; } = DataTypes.Section;
-        public IReadOnlyDictionary<string, IProperty> Properties { get; set; }
+        public Dictionary<string, IProperty> Properties { get; set; }
 
         #endregion Properties
 

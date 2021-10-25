@@ -14,7 +14,7 @@ namespace BMSSV.IO.MetroidDread
         #region Properties
 
         public string FilePath { get; }
-        public Section[] Sections { get; set; }
+        public Dictionary<string, Section> Sections { get; set; }
 
         #endregion Properties
 
@@ -24,12 +24,6 @@ namespace BMSSV.IO.MetroidDread
         private byte[] _footer = null;
 
         #endregion Members
-
-        #region Indexer
-
-
-
-        #endregion Indexer
 
         #region Ctor
 
@@ -69,7 +63,7 @@ namespace BMSSV.IO.MetroidDread
         internal static MetroidDreadBMSSVFile ReadFile(string path, Stream stream)
         {
             MetroidDreadBMSSVFile bmssvFile = new MetroidDreadBMSSVFile(path);
-            List<Section> sections = new List<Section>();
+            Dictionary<string, Section> sections = new Dictionary<string, Section>();
 
             byte[] buffer = new byte[32];
 
@@ -83,9 +77,12 @@ namespace BMSSV.IO.MetroidDread
             sectionsLength = BinaryNumericConverter.ToInt32(buffer);
 
             for (int s = 0; s < sectionsLength; s++)
-                sections.Add(ReadSection(stream));
+            {
+                var section = ReadSection(stream);
+                sections.Add(section.Name, section);
+            }
 
-            bmssvFile.Sections = sections.ToArray();
+            bmssvFile.Sections = sections;
 
             buffer = new byte[12];
 
@@ -261,12 +258,12 @@ namespace BMSSV.IO.MetroidDread
 
             stream.Write(bmssvFile._header, 0, bmssvFile._header.Length);
 
-            buffer = BinaryNumericConverter.GetBytes(bmssvFile.Sections.Length);
+            buffer = BinaryNumericConverter.GetBytes(bmssvFile.Sections.Count);
 
             stream.Write(buffer, 0, buffer.Length);
 
-            for (int s = 0; s < bmssvFile.Sections.Length; s++)
-                WriteSection(bmssvFile.Sections[s], stream);
+            for (int s = 0; s < bmssvFile.Sections.Count; s++)
+                WriteSection(bmssvFile.Sections.Values.ElementAt(s), stream);
 
             stream.Write(bmssvFile._footer, 0, bmssvFile._footer.Length);
 
@@ -289,7 +286,7 @@ namespace BMSSV.IO.MetroidDread
             WritePropertyDictionary(section.Properties, stream);
         }
 
-        internal static void WritePropertyDictionary(IReadOnlyDictionary<string, IProperty> propertyDictionary, Stream stream)
+        internal static void WritePropertyDictionary(Dictionary<string, IProperty> propertyDictionary, Stream stream)
         {
             byte[] buffer;
 

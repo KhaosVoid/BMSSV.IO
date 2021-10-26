@@ -14,7 +14,7 @@ namespace BMSSV.IO.MetroidDread.Properties
 
         public string Name { get; }
         public DataTypes DataType { get; }
-        public T Value { get; set; }
+        public virtual T Value { get; set; }
 
         #endregion Properties
 

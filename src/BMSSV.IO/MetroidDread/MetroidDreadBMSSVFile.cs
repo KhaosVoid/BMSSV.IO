@@ -218,6 +218,9 @@ namespace BMSSV.IO.MetroidDread
                 case DataTypes.StringArray:
                     return new StringArrayProperty(name, stream);
 
+                case DataTypes.String256:
+                    return new String256Property(name, stream);
+
                 case DataTypes.StringId:
                     return new StringIdProperty(name, stream);
 

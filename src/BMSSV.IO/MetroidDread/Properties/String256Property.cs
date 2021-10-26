@@ -8,18 +8,34 @@ using System.Threading.Tasks;
 
 namespace BMSSV.IO.MetroidDread.Properties
 {
-    public class StringProperty : Property<string>
+    public class String256Property : Property<string>
     {
+        #region Properties
+
+        public override string Value
+        {
+            get => _value;
+            set => _value = value.Length > 256 ? value.Substring(0, 256) : value;
+        }
+
+        #endregion Properties
+
+        #region Members
+
+        private string _value;
+
+        #endregion Members
+
         #region Ctor
 
-        public StringProperty(string name, string value = null)
-            : base(name, DataTypes.String, value)
+        public String256Property(string name, string value = null)
+            : base(name, DataTypes.String256, value)
         {
 
         }
 
-        internal StringProperty(string name, Stream stream)
-            : base(name, DataTypes.String, stream)
+        internal String256Property(string name, Stream stream)
+            : base(name, DataTypes.String256, stream)
         {
 
         }

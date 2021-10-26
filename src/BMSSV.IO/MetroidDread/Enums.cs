@@ -17,6 +17,7 @@ namespace BMSSV.IO.MetroidDread.Enums
         LiquidVolumesDictionary            = 0xC897DE38447F5CF2,
         ActorTileStatesDictionary          = 0x1D492D17D698EA76,
         StringArray                        = 0x25E09478B1D26ACF,
+        String256                          = 0x31B88BF33548DE26,
         StringId                           = 0xF6EA0DBA9BF734BF,
         String                             = 0xE0D4E713F7819779,
         MapTutorialTypesArray              = 0x7EC5E3B4F43F8724,

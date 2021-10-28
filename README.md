@@ -26,9 +26,9 @@ GitHub does not currently support access to package registries without authentic
 
 To add the NuGet package to your project, you can either use the dotnet CLI or add a package reference line to your csproj.
 
-dotnet CLI:
+dotnet CLI (replace 'packageVersion' with the desired package version):
 ```ps
-$ dotnet add PROJECT package BMSSV.IO --version 2021.10.22.1
+$ dotnet add PROJECT package BMSSV.IO --version packageVersion
 ```
 
 <br />

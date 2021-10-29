@@ -11,7 +11,7 @@ This is an independently developed project. Currently, pull requests will not be
 # Install
 This project is developed using .NET 5.0 and built as a NuGet package. To add this NuGet package to a project:
 
-GitHub does not currently support access to package registries without authenticating. You will need to create a personal access token with the "read:packages" permission enalbed. Add the following to the configuration section in your NuGet.Config:
+GitHub does not currently support access to package registries without authenticating. You will need to create a personal access token with the "read:packages" permission enabled. Add the following to the configuration section in your NuGet.Config:
 ```xml
 <packageSources>
   <add key="KhaosVoidPackages" value="https://nuget.pkg.github.com/KhaosVoid/index.json" />

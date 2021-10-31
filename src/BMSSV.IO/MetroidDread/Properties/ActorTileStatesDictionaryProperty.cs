@@ -19,7 +19,7 @@ namespace BMSSV.IO.MetroidDread.Properties
 
         }
 
-        public ActorTileStatesDictionaryProperty(string name, Stream stream)
+        internal ActorTileStatesDictionaryProperty(string name, Stream stream)
             : base(name, DataTypes.ActorTileStatesDictionary, stream)
         {
 

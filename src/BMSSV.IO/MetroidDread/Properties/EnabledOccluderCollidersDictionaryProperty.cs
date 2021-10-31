@@ -19,7 +19,7 @@ namespace BMSSV.IO.MetroidDread.Properties
 
         }
 
-        public EnabledOccluderCollidersDictionaryProperty(string name, Stream stream)
+        internal EnabledOccluderCollidersDictionaryProperty(string name, Stream stream)
             : base(name, DataTypes.EnabledOccluderCollidersDictionary, stream)
         {
 

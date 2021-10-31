@@ -218,6 +218,9 @@ namespace BMSSV.IO.MetroidDread
                 case DataTypes.OccluderVignettesDictionary:
                     return new OccluderVignettesDictionaryProperty(name, stream);
 
+                case DataTypes.MinimapVisibilityArray:
+                    return new MinimapVisibilityArrayProperty(name, stream);
+
                 case DataTypes.StringArray:
                     return new StringArrayProperty(name, stream);
 

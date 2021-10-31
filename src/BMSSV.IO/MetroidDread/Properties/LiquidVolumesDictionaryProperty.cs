@@ -19,7 +19,7 @@ namespace BMSSV.IO.MetroidDread.Properties
 
         }
 
-        public LiquidVolumesDictionaryProperty(string name, Stream stream)
+        internal LiquidVolumesDictionaryProperty(string name, Stream stream)
             : base(name, DataTypes.LiquidVolumesDictionary, stream)
         {
 

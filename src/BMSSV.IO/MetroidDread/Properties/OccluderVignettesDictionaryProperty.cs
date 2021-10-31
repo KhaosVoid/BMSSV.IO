@@ -12,13 +12,13 @@ namespace BMSSV.IO.MetroidDread.Properties
     {
         #region Ctor
 
-        public OccluderVignettesDictionaryProperty(string name, Dictionary<string, bool> value)
+        public OccluderVignettesDictionaryProperty(string name, Dictionary<string, bool> value = null)
             : base(name, DataTypes.OccluderVignettesDictionary, value)
         {
 
         }
 
-        public OccluderVignettesDictionaryProperty(string name, Stream stream)
+        internal OccluderVignettesDictionaryProperty(string name, Stream stream)
             : base(name, DataTypes.OccluderVignettesDictionary, stream)
         {
 

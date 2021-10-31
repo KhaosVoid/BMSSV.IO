@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace BMSSV.IO.MetroidDread.Properties
 {
-    public class LiquidVolumesDictionaryProperty : Property<IReadOnlyDictionary<string, AreaBox>>
+    public class LiquidVolumesDictionaryProperty : Property<Dictionary<string, AreaBox>>
     {
         #region Ctor
 
-        public LiquidVolumesDictionaryProperty(string name, IReadOnlyDictionary<string, AreaBox> value = null)
+        public LiquidVolumesDictionaryProperty(string name, Dictionary<string, AreaBox> value = null)
             : base(name, DataTypes.LiquidVolumesDictionary, value)
         {
 
@@ -44,7 +44,7 @@ namespace BMSSV.IO.MetroidDread.Properties
             return rawValue.ToArray();
         }
 
-        protected override IReadOnlyDictionary<string, AreaBox> GetValueFromStream(Stream stream)
+        protected override Dictionary<string, AreaBox> GetValueFromStream(Stream stream)
         {
             Dictionary<string, AreaBox> liquidVolumesDictionary = new Dictionary<string, AreaBox>();
             int itemsLength;

@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace BMSSV.IO.MetroidDread.Properties
 {
-    public class ActorTileStatesDictionaryProperty : Property<IReadOnlyDictionary<string, ActorTileState[]>>
+    public class ActorTileStatesDictionaryProperty : Property<Dictionary<string, ActorTileState[]>>
     {
         #region Ctor
 
-        public ActorTileStatesDictionaryProperty(string name, IReadOnlyDictionary<string, ActorTileState[]> value = null)
+        public ActorTileStatesDictionaryProperty(string name, Dictionary<string, ActorTileState[]> value = null)
             : base(name, DataTypes.ActorTileStatesDictionary, value)
         {
 
@@ -47,7 +47,7 @@ namespace BMSSV.IO.MetroidDread.Properties
             return rawValue.ToArray();
         }
 
-        protected override IReadOnlyDictionary<string, ActorTileState[]> GetValueFromStream(Stream stream)
+        protected override Dictionary<string, ActorTileState[]> GetValueFromStream(Stream stream)
         {
             Dictionary<string, ActorTileState[]> actorTileStatesDictionary = new Dictionary<string, ActorTileState[]>();
             int itemsLength;

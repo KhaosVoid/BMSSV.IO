@@ -215,6 +215,9 @@ namespace BMSSV.IO.MetroidDread
                 case DataTypes.ActorTileStatesDictionary:
                     return new ActorTileStatesDictionaryProperty(name, stream);
 
+                case DataTypes.OccluderVignettesDictionary:
+                    return new OccluderVignettesDictionaryProperty(name, stream);
+
                 case DataTypes.StringArray:
                     return new StringArrayProperty(name, stream);
 

@@ -16,6 +16,7 @@ namespace BMSSV.IO.MetroidDread.Enums
         EnabledOccluderCollidersDictionary = 0x0C500CA1F3B54C26,
         LiquidVolumesDictionary            = 0xC897DE38447F5CF2,
         ActorTileStatesDictionary          = 0x1D492D17D698EA76,
+        OccluderVignettesDictionary        = 0xCADF3A163B607F5B,
         StringArray                        = 0x25E09478B1D26ACF,
         String256                          = 0x31B88BF33548DE26,
         StringId                           = 0xF6EA0DBA9BF734BF,

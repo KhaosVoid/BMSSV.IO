@@ -31,6 +31,7 @@
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\AreaBoxProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\BooleanArrayProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\BooleanProperty.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\CheckpointOffsetProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\EnabledOccluderCollidersDictionaryProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\FloatProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\GlobalMapIconsArrayProperty.bin" />

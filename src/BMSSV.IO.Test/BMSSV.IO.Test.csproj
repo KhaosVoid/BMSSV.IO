@@ -47,6 +47,7 @@
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\StringProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\UInt32Property.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\Vector2Property.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\Vector3Property.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Sections\Section.bin" />
   </ItemGroup>
 

@@ -20,6 +20,7 @@ namespace BMSSV.IO.MetroidDread.Enums
         MinimapVisibilityArray             = 0x1792BC17AD716D8D,
         CheckpointOffset                   = 0xBF8FE251F17EAD25,
         Vector2                            = 0xF46AD97DC54A9259,
+        Vector3                            = 0xF99B092157337B0D,
         StringArray                        = 0x25E09478B1D26ACF,
         String256                          = 0x31B88BF33548DE26,
         StringId                           = 0xF6EA0DBA9BF734BF,

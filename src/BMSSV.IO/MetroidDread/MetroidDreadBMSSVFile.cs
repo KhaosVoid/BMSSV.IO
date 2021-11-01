@@ -227,6 +227,9 @@ namespace BMSSV.IO.MetroidDread
                 case DataTypes.Vector2:
                     return new Vector2Property(name, stream);
 
+                case DataTypes.Vector3:
+                    return new Vector3Property(name, stream);
+
                 case DataTypes.StringArray:
                     return new StringArrayProperty(name, stream);
 

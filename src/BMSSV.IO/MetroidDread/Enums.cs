@@ -29,6 +29,7 @@ namespace BMSSV.IO.MetroidDread.Enums
         Float                              = 0x518AD65EBA597493,
         UInt32                             = 0xD6AC6CD794D87CB9,
         Int32                              = 0x1D4F060F133F1E29,
+        DoorLifeComponentState             = 0x2567850CE806D4F8,
         BooleanArray                       = 0x8873943D8EB9C629,
         Boolean                            = 0x2B1A8B33DE7B0C6A
     }
@@ -55,6 +56,18 @@ namespace BMSSV.IO.MetroidDread.Enums
     {
         Collision      = 0x256582A39FB5119F,
         TrapBlockFinal = 0x7BABC0C8085511C2,
-        UnknownType1   = 0x1A9241A8743F4CAB
+        UnknownType1   = 0x1A9241A8743F4CAB,
+        UnknownType2   = 0xD0742138Fc74Ec08,
+        UnknownType3   = 0xE59D9C72946EE696,
+        UnknownType4   = 0x145D990A588908BB,
+        UnknownType5   = 0xE48BC693150E464F,
+        UnknownType6   = 0x1ED58C7641EFCC2C,
+        UnknownType7   = 0x2C15B41771891777,
+        UnknownType8   = 0x40BAA540D530AA25,
+        UnknownType9   = 0xEC6670556EB06377,
+        UnknownType10  = 0x145D990A588908BB,
+        UnknownType11  = 0x8DC2E7510FAB1F45,
+        UnknownType12  = 0xDBEC65DF4FDE1A6D,
+        UnknownType13  = 0x6FF3E71C57D6839C
     }
 }

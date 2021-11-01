@@ -224,6 +224,9 @@ namespace BMSSV.IO.MetroidDread
                 case DataTypes.CheckpointOffset:
                     return new CheckpointOffsetProperty(name, stream);
 
+                case DataTypes.Vector2:
+                    return new Vector2Property(name, stream);
+
                 case DataTypes.StringArray:
                     return new StringArrayProperty(name, stream);
 

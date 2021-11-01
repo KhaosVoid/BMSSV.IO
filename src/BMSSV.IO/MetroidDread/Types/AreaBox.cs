@@ -62,7 +62,7 @@ namespace BMSSV.IO.MetroidDread.Types
         internal static AreaBox FromStream(Stream stream)
         {
             AreaBox areaBox = new AreaBox();
-            byte[] buffer = new byte[sizeof(uint)];
+            byte[] buffer = new byte[sizeof(int)];
 
             stream.Read(buffer, 0, buffer.Length);
 

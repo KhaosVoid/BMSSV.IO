@@ -9,17 +9,17 @@ using System.Threading.Tasks;
 
 namespace BMSSV.IO.MetroidDread.Properties
 {
-    public class EnabledOccluderCollidersDictionaryProperty : Property<IReadOnlyDictionary<string, OccluderColliderTypeIds[]>>
+    public class EnabledOccluderCollidersDictionaryProperty : Property<Dictionary<string, OccluderColliderTypeIds[]>>
     {
         #region Ctor
 
-        public EnabledOccluderCollidersDictionaryProperty(string name, IReadOnlyDictionary<string, OccluderColliderTypeIds[]> value = null)
+        public EnabledOccluderCollidersDictionaryProperty(string name, Dictionary<string, OccluderColliderTypeIds[]> value = null)
             : base(name, DataTypes.EnabledOccluderCollidersDictionary, value)
         {
 
         }
 
-        public EnabledOccluderCollidersDictionaryProperty(string name, Stream stream)
+        internal EnabledOccluderCollidersDictionaryProperty(string name, Stream stream)
             : base(name, DataTypes.EnabledOccluderCollidersDictionary, stream)
         {
 
@@ -50,7 +50,7 @@ namespace BMSSV.IO.MetroidDread.Properties
             return rawValue.ToArray();
         }
 
-        protected override IReadOnlyDictionary<string, OccluderColliderTypeIds[]> GetValueFromStream(Stream stream)
+        protected override Dictionary<string, OccluderColliderTypeIds[]> GetValueFromStream(Stream stream)
         {
             Dictionary<string, OccluderColliderTypeIds[]> enabledOccluderCollidersDictionary = new Dictionary<string, OccluderColliderTypeIds[]>();
             int itemsLength;

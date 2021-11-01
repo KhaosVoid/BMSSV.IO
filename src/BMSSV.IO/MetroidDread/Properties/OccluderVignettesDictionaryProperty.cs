@@ -1,5 +1,4 @@
 ﻿using BMSSV.IO.MetroidDread.Enums;
-using BMSSV.IO.MetroidDread.Types;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,18 +8,18 @@ using System.Threading.Tasks;
 
 namespace BMSSV.IO.MetroidDread.Properties
 {
-    public class LiquidVolumesDictionaryProperty : Property<Dictionary<string, AreaBox>>
+    public class OccluderVignettesDictionaryProperty : Property<Dictionary<string, bool>>
     {
         #region Ctor
 
-        public LiquidVolumesDictionaryProperty(string name, Dictionary<string, AreaBox> value = null)
-            : base(name, DataTypes.LiquidVolumesDictionary, value)
+        public OccluderVignettesDictionaryProperty(string name, Dictionary<string, bool> value = null)
+            : base(name, DataTypes.OccluderVignettesDictionary, value)
         {
 
         }
 
-        internal LiquidVolumesDictionaryProperty(string name, Stream stream)
-            : base(name, DataTypes.LiquidVolumesDictionary, stream)
+        internal OccluderVignettesDictionaryProperty(string name, Stream stream)
+            : base(name, DataTypes.OccluderVignettesDictionary, stream)
         {
 
         }
@@ -38,15 +37,15 @@ namespace BMSSV.IO.MetroidDread.Properties
             for (int i = 0; i < Value.Count; i++)
             {
                 rawValue.AddRange(Encoding.UTF8.GetBytes(Value.Keys.ElementAt(i) + (char)0x00));
-                rawValue.AddRange(Value.Values.ElementAt(i).GetBytes());
+                rawValue.AddRange(BitConverter.GetBytes(Value.Values.ElementAt(i)));
             }
 
             return rawValue.ToArray();
         }
 
-        protected override Dictionary<string, AreaBox> GetValueFromStream(Stream stream)
+        protected override Dictionary<string, bool> GetValueFromStream(Stream stream)
         {
-            Dictionary<string, AreaBox> liquidVolumesDictionary = new Dictionary<string, AreaBox>();
+            Dictionary<string, bool> occluderVignettesDictionary = new Dictionary<string, bool>();
             int itemsLength;
             long lastPosition;
             byte[] buffer = new byte[sizeof(int)];
@@ -71,12 +70,16 @@ namespace BMSSV.IO.MetroidDread.Properties
 
                 key = Encoding.UTF8.GetString(buffer).Trim((char)0x00);
 
-                liquidVolumesDictionary.Add(
-                    key: key,
-                    value: AreaBox.FromStream(stream));
+                buffer = new byte[sizeof(bool)];
+
+                stream.Read(buffer, 0, buffer.Length);
+
+                bool value = BitConverter.ToBoolean(buffer);
+
+                occluderVignettesDictionary.Add(key, value);
             }
 
-            return liquidVolumesDictionary;
+            return occluderVignettesDictionary;
         }
 
         #endregion Methods

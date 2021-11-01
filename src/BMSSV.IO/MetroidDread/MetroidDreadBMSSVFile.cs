@@ -215,6 +215,21 @@ namespace BMSSV.IO.MetroidDread
                 case DataTypes.ActorTileStatesDictionary:
                     return new ActorTileStatesDictionaryProperty(name, stream);
 
+                case DataTypes.OccluderVignettesDictionary:
+                    return new OccluderVignettesDictionaryProperty(name, stream);
+
+                case DataTypes.MinimapVisibilityArray:
+                    return new MinimapVisibilityArrayProperty(name, stream);
+
+                case DataTypes.CheckpointOffset:
+                    return new CheckpointOffsetProperty(name, stream);
+
+                case DataTypes.Vector2:
+                    return new Vector2Property(name, stream);
+
+                case DataTypes.Vector3:
+                    return new Vector3Property(name, stream);
+
                 case DataTypes.StringArray:
                     return new StringArrayProperty(name, stream);
 
@@ -237,6 +252,7 @@ namespace BMSSV.IO.MetroidDread
                     return new UInt32Property(name, stream);
 
                 case DataTypes.Int32:
+                case DataTypes.DoorLifeComponentState: //Possibly an enum value; may need to make this it's own Property
                     return new Int32Property(name, stream);
 
                 case DataTypes.Boolean:

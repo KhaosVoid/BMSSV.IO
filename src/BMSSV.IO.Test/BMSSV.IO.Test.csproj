@@ -31,18 +31,23 @@
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\AreaBoxProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\BooleanArrayProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\BooleanProperty.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\CheckpointOffsetProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\EnabledOccluderCollidersDictionaryProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\FloatProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\GlobalMapIconsArrayProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\Int32Property.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\LiquidVolumesDictionaryProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\MapTutorialTypesArrayProperty.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\MinimapVisibilityArrayProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\MissionLogEntriesArrayProperty.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\OccluderVignettesDictionaryProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\String256Property.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\StringArrayProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\StringIdProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\StringProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\UInt32Property.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\Vector2Property.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\Vector3Property.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Sections\Section.bin" />
   </ItemGroup>
 

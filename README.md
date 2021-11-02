@@ -1,8 +1,7 @@
 # BMSSV.IO
 An IO library for interacting with the Mercury Steam BMSSV save format.
 
-This library is still in active development as samus.bmssv has not been fully parsed.
-
+This library is still in active development. Currently, common.bmssv, pkprfl.bmssv, samus.bmssv, and userdata.bmssv have been parsed.
 ## Contributing
 This is an independently developed project. Currently, pull requests will not be accepted as the project will be constantly changing to support my other projects relating to the BMSSV format.
 

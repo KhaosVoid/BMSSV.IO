@@ -224,6 +224,9 @@ namespace BMSSV.IO.MetroidDread
                 case DataTypes.CheckpointOffset:
                     return new CheckpointOffsetProperty(name, stream);
 
+                case DataTypes.MinimapCustomMarkerDictionary:
+                    return new MinimapCustomMarkerDictionaryProperty(name, stream);
+
                 case DataTypes.Vector2:
                     return new Vector2Property(name, stream);
 

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace BMSSV.IO.Test.MetroidDread.PropertyTests
 {
     [TestClass]
-    public class ActorTileStatesMapArrayPropertyTest : PropertyTest<ActorTileStatesDictionaryProperty>
+    public class ActorTileStatesDictionaryPropertyTest : PropertyTest<ActorTileStatesDictionaryProperty>
     {
         #region Properties
 

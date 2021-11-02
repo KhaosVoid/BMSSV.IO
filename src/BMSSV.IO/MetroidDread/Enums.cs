@@ -19,6 +19,7 @@ namespace BMSSV.IO.MetroidDread.Enums
         OccluderVignettesDictionary        = 0xCADF3A163B607F5B,
         MinimapVisibilityArray             = 0x1792BC17AD716D8D,
         CheckpointOffset                   = 0xBF8FE251F17EAD25,
+        MinimapCustomMarkerDictionary      = 0xBF450D514E81EB1B,
         Vector2                            = 0xF46AD97DC54A9259,
         Vector3                            = 0xF99B092157337B0D,
         StringArray                        = 0x25E09478B1D26ACF,
@@ -36,20 +37,25 @@ namespace BMSSV.IO.MetroidDread.Enums
 
     public enum PropertyIds : ulong
     {
-        MissionLogEntryType      = 0x72CFCC424A228498,
-        MissionLogLabelText      = 0x31D90A80FF583FC1,
-        MissionLogCaptionIds     = 0x8EF51A47A8CCA255,
-        GlobalMapIconId          = 0xE926F01F5C4070D0,
-        GlobalMapIconPosition    = 0x9A714C5BDFE4E50F,
-        AreaBoxMin               = 0x1296854B5C530FAF,
-        AreaBoxMax               = 0xD4A5EC5A593AE24D,
-        ActorTileStateX          = 0xF9304C6C1D1D55FA,
-        ActorTileStateY          = 0x966FEB6FA3517B49,
-        ActorTileStateType       = 0xA086BDADD2CF1BE8,
-        ActorTileStateState      = 0x7A64BDD1A5B7F7BF,
-        CheckpointOffsetId       = 0xB7C1F0A2F08B8870,
-        CheckpointOffsetPosition = 0xAA8881F44964F0C2,
-        CheckpointOffsetAngle    = 0xACCD3DDFD3D4567A
+        MissionLogEntryType           = 0x72CFCC424A228498,
+        MissionLogLabelText           = 0x31D90A80FF583FC1,
+        MissionLogCaptionIds          = 0x8EF51A47A8CCA255,
+        GlobalMapIconId               = 0xE926F01F5C4070D0,
+        GlobalMapIconPosition         = 0x9A714C5BDFE4E50F,
+        AreaBoxMin                    = 0x1296854B5C530FAF,
+        AreaBoxMax                    = 0xD4A5EC5A593AE24D,
+        ActorTileStateX               = 0xF9304C6C1D1D55FA,
+        ActorTileStateY               = 0x966FEB6FA3517B49,
+        ActorTileStateType            = 0xA086BDADD2CF1BE8,
+        ActorTileStateState           = 0x7A64BDD1A5B7F7BF,
+        CheckpointOffsetId            = 0xB7C1F0A2F08B8870,
+        CheckpointOffsetPosition      = 0xAA8881F44964F0C2,
+        CheckpointOffsetAngle         = 0xACCD3DDFD3D4567A,
+        MinimapCustomMarkerId         = 0xF3A3EBFFF0077303,
+        MinimapCustomMarkerType       = 0x79F31B83386F08A1,
+        MinimapCustomMarkerPosition   = 0xD1A8336890B4BBDD,
+        MinimapCustomMarkerTargetId   = 0xBFE26B06920280B2,
+        MinimapCustomMarkerTargetSlot = 0x79C2F775BD2B3138
     }
 
     public enum OccluderColliderTypeIds : ulong

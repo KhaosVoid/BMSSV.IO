@@ -38,6 +38,7 @@
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\Int32Property.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\LiquidVolumesDictionaryProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\MapTutorialTypesArrayProperty.bin" />
+	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\MinimapCustomMarkerDictionaryProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\MinimapVisibilityArrayProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\MissionLogEntriesArrayProperty.bin" />
 	<EmbeddedResource Include="MetroidDread\SampleFiles\Properties\OccluderVignettesDictionaryProperty.bin" />

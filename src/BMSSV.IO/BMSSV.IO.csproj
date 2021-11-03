@@ -9,9 +9,9 @@
     <Product>BMSSV.IO</Product>
     <Description>An IO library for interacting with the Mercury Steam BMSSV save format.</Description>
     <Copyright>Zach "KhaosVoid" Tommey - Copyright 2021</Copyright>
-    <Version>2021.11.2.0</Version>
-    <AssemblyVersion>2021.11.2.0</AssemblyVersion>
-    <FileVersion>2021.11.2.0</FileVersion>
+    <Version>2021.11.3.0</Version>
+    <AssemblyVersion>2021.11.3.0</AssemblyVersion>
+    <FileVersion>2021.11.3.0</FileVersion>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="MetroidSamusReturns\" />

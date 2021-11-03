@@ -8,10 +8,10 @@ namespace BMSSV.IO.MetroidDread.Types
 {
     public enum DoorLifeComponentStates
     {
-        None = 0,
-        Opened = 1,
-        Closed = 2,
-        Locked = 3,
+        None    = 0,
+        Opened  = 1,
+        Closed  = 2,
+        Locked  = 3,
         Invalid = int.MaxValue
     }
 }

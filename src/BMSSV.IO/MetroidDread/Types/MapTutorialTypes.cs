@@ -8,8 +8,9 @@ namespace BMSSV.IO.MetroidDread.Types
 {
     public enum MapTutorialTypes
     {
-        Type0 = 0,
-        Type1 = 1,
-        Type2 = 2
+        HintZone      = 0,
+        EmmiZone      = 1,
+        TeleporterNet = 2,
+        Invalid = int.MaxValue
     }
 }

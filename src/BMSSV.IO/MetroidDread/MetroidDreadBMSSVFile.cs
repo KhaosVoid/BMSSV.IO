@@ -254,8 +254,10 @@ namespace BMSSV.IO.MetroidDread
                 case DataTypes.UInt32:
                     return new UInt32Property(name, stream);
 
+                case DataTypes.DoorLifeComponentState:
+                    return new DoorLifeComponentStateProperty(name, stream);
+
                 case DataTypes.Int32:
-                case DataTypes.DoorLifeComponentState: //Possibly an enum value; may need to make this it's own Property
                     return new Int32Property(name, stream);
 
                 case DataTypes.Boolean:

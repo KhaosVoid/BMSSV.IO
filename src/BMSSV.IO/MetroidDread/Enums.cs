@@ -62,18 +62,26 @@ namespace BMSSV.IO.MetroidDread.Enums
     {
         Collision       = 0x256582A39FB5119F,
         TrapBlockFinal  = 0x7BABC0C8085511C2,
+        CollisionOpened = 0x2C15B41771891777,
+        CollisionClose  = 0xC1A3AFE60BD47C80,
+        CollisionClosed = 0x2F6D2F820BE625FA,
         UnknownType1    = 0x1A9241A8743F4CAB,
         UnknownType2    = 0xD0742138FC74EC08,
         UnknownType3    = 0xE59D9C72946EE696,
         UnknownType4    = 0x145D990A588908BB,
         UnknownType5    = 0xE48BC693150E464F,
         UnknownType6    = 0x1ED58C7641EFCC2C,
-        CollisionOpened = 0x2C15B41771891777,
-        UnknownType8    = 0x40BAA540D530AA25,
-        UnknownType9    = 0xEC6670556EB06377,
-        UnknownType10   = 0x8DC2E7510FAB1F45,
-        UnknownType11   = 0xDBEC65DF4FDE1A6D,
-        UnknownType12   = 0x6FF3E71C57D6839C,
-        CollisionClose  = 0xC1A3AFE60BD47C80
+        UnknownType7    = 0x40BAA540D530AA25,
+        UnknownType8    = 0xEC6670556EB06377,
+        UnknownType9    = 0x8DC2E7510FAB1F45,
+        UnknownType10   = 0xDBEC65DF4FDE1A6D,
+        UnknownType11   = 0x6FF3E71C57D6839C,
+        UnknownType12   = 0x1DCF8BB14CF6E63A,
+        UnknownType13   = 0x2B45F89AE0097E41,
+        UnknownType14   = 0xAFE3B5CB55A6025B,
+        UnknownType15   = 0x427DA2B93E7204DE,
+        UnknownType16   = 0x5A5804F9F1C3788C,
+        UnknownType17   = 0x1E7C8A4504FDFA16,
+        UnknownType18   = 0x6C60E4ABF3FB7C30
     }
 }

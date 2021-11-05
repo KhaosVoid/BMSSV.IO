@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace BMSSV.IO.MetroidDread.Types
 {
-    public enum MapTutorialTypes
+    public enum DoorLifeComponentStates
     {
-        HintZone      = 0,
-        EmmiZone      = 1,
-        TeleporterNet = 2,
+        None    = 0,
+        Opened  = 1,
+        Closed  = 2,
+        Locked  = 3,
         Invalid = int.MaxValue
     }
 }

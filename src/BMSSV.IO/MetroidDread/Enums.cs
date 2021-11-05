@@ -73,6 +73,7 @@ namespace BMSSV.IO.MetroidDread.Enums
         UnknownType9    = 0xEC6670556EB06377,
         UnknownType10   = 0x8DC2E7510FAB1F45,
         UnknownType11   = 0xDBEC65DF4FDE1A6D,
-        UnknownType12   = 0x6FF3E71C57D6839C
+        UnknownType12   = 0x6FF3E71C57D6839C,
+        CollisionClose  = 0xC1A3AFE60BD47C80
     }
 }

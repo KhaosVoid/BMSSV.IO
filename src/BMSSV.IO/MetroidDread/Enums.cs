@@ -60,28 +60,73 @@ namespace BMSSV.IO.MetroidDread.Enums
 
     public enum OccluderColliderTypeIds : ulong
     {
-        Collision       = 0x256582A39FB5119F,
-        TrapBlockFinal  = 0x7BABC0C8085511C2,
-        CollisionOpened = 0x2C15B41771891777,
-        CollisionClose  = 0xC1A3AFE60BD47C80,
-        CollisionClosed = 0x2F6D2F820BE625FA,
-        UnknownType1    = 0x1A9241A8743F4CAB,
-        UnknownType2    = 0xD0742138FC74EC08,
-        UnknownType3    = 0xE59D9C72946EE696,
-        UnknownType4    = 0x145D990A588908BB,
-        UnknownType5    = 0xE48BC693150E464F,
-        UnknownType6    = 0x1ED58C7641EFCC2C,
-        UnknownType7    = 0x40BAA540D530AA25,
-        UnknownType8    = 0xEC6670556EB06377,
-        UnknownType9    = 0x8DC2E7510FAB1F45,
-        UnknownType10   = 0xDBEC65DF4FDE1A6D,
-        UnknownType11   = 0x6FF3E71C57D6839C,
-        UnknownType12   = 0x1DCF8BB14CF6E63A,
-        UnknownType13   = 0x2B45F89AE0097E41,
-        UnknownType14   = 0xAFE3B5CB55A6025B,
-        UnknownType15   = 0x427DA2B93E7204DE,
-        UnknownType16   = 0x5A5804F9F1C3788C,
-        UnknownType17   = 0x1E7C8A4504FDFA16,
-        UnknownType18   = 0x6C60E4ABF3FB7C30
+        //collision
+        Collision          = 0x256582A39FB5119F,
+
+        //trapblockfinal
+        TrapBlockFinal     = 0x7BABC0C8085511C2,
+
+        //collision_opened
+        CollisionOpened    = 0x2C15B41771891777,
+
+        //collision_close
+        CollisionClose     = 0xC1A3AFE60BD47C80,
+
+        //collision_closed
+        CollisionClosed    = 0x2F6D2F820BE625FA,
+
+        //collision_box
+        CollisionBox       = 0x1A9241A8743F4CAB,
+
+        //collisions
+        Collisions         = 0xE59D9C72946EE696,
+
+        //collision_base
+        CollisionBase      = 0x1ED58C7641EFCC2C,
+
+        //collision_up
+        CollisionUp        = 0xEC6670556EB06377,
+
+        //collision012_DEBRIS
+        Collision012DEBRIS = 0xDBEC65DF4FDE1A6D,
+
+        //collision007_DEBRIS
+        Collision007DEBRIS = 0x6FF3E71C57D6839C,
+
+        //collision018
+        Collision018       = 0x1DCF8BB14CF6E63A,
+
+        //collision2
+        Collision2         = 0x2B45F89AE0097E41,
+
+        //collision_hit
+        CollisionHit       = 0xAFE3B5CB55A6025B,
+
+        //collision003
+        Collision003       = 0x427DA2B93E7204DE,
+
+        //collision006
+        Collision006       = 0x1E7C8A4504FDFA16,
+
+        //collision020
+        Collision020       = 0x6C60E4ABF3FB7C30,
+
+        //UnknownType1
+        UnknownType1       = 0xD0742138FC74EC08,
+
+        //UnknownType2
+        UnknownType2       = 0x145D990A588908BB,
+
+        //UnknownType3
+        UnknownType3       = 0xE48BC693150E464F,
+
+        //UnknownType4
+        UnknownType4       = 0x40BAA540D530AA25,
+
+        //UnknownType5
+        UnknownType5       = 0x8DC2E7510FAB1F45,
+
+        //UnknownType6
+        UnknownType6       = 0x5A5804F9F1C3788C
     }
 }

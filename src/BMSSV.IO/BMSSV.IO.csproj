@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net6.0-windows</TargetFramework>
-    <UseWPF>true</UseWPF>
+    <TargetFramework>net6.0</TargetFramework>
     <RepositoryUrl>https://github.com/KhaosVoid/BMSSV.IO</RepositoryUrl>
     <PackageId>BMSSV.IO</PackageId>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>

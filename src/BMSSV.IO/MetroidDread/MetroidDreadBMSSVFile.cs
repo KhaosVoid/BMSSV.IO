@@ -41,6 +41,11 @@ namespace BMSSV.IO.MetroidDread
 
         #region File Methods
 
+        public static MetroidDreadBMSSVFile OpenFileFromStream(string fileName, Stream stream)
+        {
+            return ReadFile(@$"C:\FakePath\{fileName}", stream);
+        }
+
         public static MetroidDreadBMSSVFile OpenFile(string path)
         {
             if (!File.Exists(path))

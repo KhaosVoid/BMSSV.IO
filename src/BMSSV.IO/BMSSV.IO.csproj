@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
@@ -8,10 +8,10 @@
     <Authors>Zach "KhaosVoid" Tommey</Authors>
     <Product>BMSSV.IO</Product>
     <Description>An IO library for interacting with the Mercury Steam BMSSV save format.</Description>
-    <Copyright>Zach "KhaosVoid" Tommey - Copyright 2021</Copyright>
-    <Version>2021.11.11.0</Version>
-    <AssemblyVersion>2021.11.11.0</AssemblyVersion>
-    <FileVersion>2021.11.11.0</FileVersion>
+    <Copyright>Zach "KhaosVoid" Tommey - Copyright 2022</Copyright>
+    <Version>2022.6.19.0</Version>
+    <AssemblyVersion>2022.6.19.0</AssemblyVersion>
+    <FileVersion>2022.6.19.0</FileVersion>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="MetroidSamusReturns\" />
